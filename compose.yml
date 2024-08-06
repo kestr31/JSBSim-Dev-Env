@@ -1,0 +1,19 @@
+services:
+  jsbsim-env:
+    # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    # ------------STATIC VALUE DO NOT MODIFY-------------
+    # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    image: ${JSBSIM_ENV_IMAGE}
+    container_name:  ${JSBSIM_ENV_CONTAINER}
+    volumes:
+      - ${JSBSIM_WORKSPACE}:/home/user/workspace
+    network_mode: host
+    hostname: ${JSBSIM_ENV_CONTAINER}
+    entrypoint: ${JSBSIM_RUN_COMMAND}
+    working_dir: /home/user/workspace
+    env_file:
+      - path: ./jsbsim.env
+        required: true
+    stdin_open: true
+    tty: true
+    # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
