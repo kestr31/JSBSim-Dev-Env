@@ -1,4 +1,4 @@
-# JSBSim DevelopmenT Environment Container and SCript Tools
+# JSBSim DevelopmenT Environment Container and Script Tools
 
 - This repository contains a Dockerfile and a set of scripts to build a Docker container for JSBSim development.
 - The container is based on Ubuntu 22.04 LTS (jammy) and includes all the necessary tools to build and run JSBSim.
@@ -22,7 +22,7 @@
 - First, clone this repository.
 
 ```bash
-git clone https://github.com/kestr31/jsbsim-dev-env.git
+git clone https://github.com/kestr31/JSBSim-Dev-Env.git
 ```
 
 - Then, run `initial_setup.sh` to install docker.
