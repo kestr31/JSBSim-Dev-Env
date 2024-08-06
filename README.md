@@ -35,7 +35,7 @@ cd jsbsim-dev-env
 ```
 
 - After the reboot, use following commands to clone and build the JSBSim to the JSBSim container workspace.
-- The workspace is set to `${HOME}/Documents/JSBSim` by default.
+- The workspace is set to `${HOME}/Documents/JSBSim/workspace` by default.
 - `1.2.0` of JSBSim is cloned and built by default.
 
 ```bash
